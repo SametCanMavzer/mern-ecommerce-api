@@ -8,6 +8,7 @@ dotenv.config();
 const app = express();
 
 
+app.use(express.json()); // Parse JSON bodies
 
 app.use("/api/auth", authRoutes);
 
