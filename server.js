@@ -8,6 +8,8 @@ import authRoutes from "./src/routes/auth.route.js";
 import productRoutes from "./src/routes/product.route.js";
 import cartRoutes from "./src/routes/cart.route.js";
 import couponRoutes from "./src/routes/coupon.route.js";
+import paymentRoutes from "./routes/payment.route.js";
+
 
 dotenv.config();
 
@@ -21,6 +23,8 @@ app.use("/api/auth", authRoutes);
 app.use("/api/products", productRoutes);
 app.use("/api/cart", cartRoutes);
 app.use("/api/coupons", couponRoutes);
+app.use("/api/payments", paymentRoutes);
+
 
 
 
